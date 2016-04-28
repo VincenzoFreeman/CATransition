@@ -10,6 +10,12 @@
 		4C3E984F1CD19B7D00DCB56B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3E984E1CD19B7D00DCB56B /* HomeViewController.swift */; };
 		4C3E98511CD1A11800DCB56B /* HomeLaout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3E98501CD1A11800DCB56B /* HomeLaout.swift */; };
 		4C3E98531CD1A95400DCB56B /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3E98521CD1A95400DCB56B /* NetworkTools.swift */; };
+		4C764B2E1CD1BDDB001A78B9 /* ShopItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C764B2D1CD1BDDB001A78B9 /* ShopItem.swift */; };
+		4C764B301CD1C005001A78B9 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C764B2F1CD1C005001A78B9 /* HomeCell.swift */; };
+		4C764B321CD1E8AD001A78B9 /* PhotosBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C764B311CD1E8AD001A78B9 /* PhotosBrowserViewController.swift */; };
+		4C764B341CD1F1F7001A78B9 /* UIButton-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C764B331CD1F1F7001A78B9 /* UIButton-Extension.swift */; };
+		4C764B361CD1FA63001A78B9 /* PhotoBrowserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C764B351CD1FA63001A78B9 /* PhotoBrowserCell.swift */; };
+		4C764B381CD1FAD1001A78B9 /* PhotosBrowserCollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C764B371CD1FAD1001A78B9 /* PhotosBrowserCollectionLayout.swift */; };
 		4C809CB81CD0F72C00163558 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C809CB71CD0F72C00163558 /* AppDelegate.swift */; };
 		4C809CBD1CD0F72C00163558 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C809CBB1CD0F72C00163558 /* Main.storyboard */; };
 		4C809CBF1CD0F72C00163558 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C809CBE1CD0F72C00163558 /* Assets.xcassets */; };
@@ -23,6 +29,12 @@
 		4C3E984E1CD19B7D00DCB56B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4C3E98501CD1A11800DCB56B /* HomeLaout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeLaout.swift; sourceTree = "<group>"; };
 		4C3E98521CD1A95400DCB56B /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		4C764B2D1CD1BDDB001A78B9 /* ShopItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopItem.swift; sourceTree = "<group>"; };
+		4C764B2F1CD1C005001A78B9 /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		4C764B311CD1E8AD001A78B9 /* PhotosBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosBrowserViewController.swift; sourceTree = "<group>"; };
+		4C764B331CD1F1F7001A78B9 /* UIButton-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton-Extension.swift"; sourceTree = "<group>"; };
+		4C764B351CD1FA63001A78B9 /* PhotoBrowserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowserCell.swift; sourceTree = "<group>"; };
+		4C764B371CD1FAD1001A78B9 /* PhotosBrowserCollectionLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosBrowserCollectionLayout.swift; sourceTree = "<group>"; };
 		4C809CB41CD0F72C00163558 /* CATransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CATransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C809CB71CD0F72C00163558 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C809CBC1CD0F72C00163558 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,8 +67,8 @@
 		4C3E984A1CD19B4E00DCB56B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				4C3E984B1CD19B4E00DCB56B /* Home */,
 				4C3E984C1CD19B4E00DCB56B /* PhotoBrowser */,
+				4C3E984B1CD19B4E00DCB56B /* Home */,
 				4C3E984D1CD19B4E00DCB56B /* Tools */,
 			);
 			path = Classes;
@@ -67,6 +79,8 @@
 			children = (
 				4C3E984E1CD19B7D00DCB56B /* HomeViewController.swift */,
 				4C3E98501CD1A11800DCB56B /* HomeLaout.swift */,
+				4C764B2D1CD1BDDB001A78B9 /* ShopItem.swift */,
+				4C764B2F1CD1C005001A78B9 /* HomeCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -74,6 +88,9 @@
 		4C3E984C1CD19B4E00DCB56B /* PhotoBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				4C764B311CD1E8AD001A78B9 /* PhotosBrowserViewController.swift */,
+				4C764B351CD1FA63001A78B9 /* PhotoBrowserCell.swift */,
+				4C764B371CD1FAD1001A78B9 /* PhotosBrowserCollectionLayout.swift */,
 			);
 			path = PhotoBrowser;
 			sourceTree = "<group>";
@@ -82,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				4C3E98521CD1A95400DCB56B /* NetworkTools.swift */,
+				4C764B331CD1F1F7001A78B9 /* UIButton-Extension.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -248,10 +266,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C764B321CD1E8AD001A78B9 /* PhotosBrowserViewController.swift in Sources */,
 				4C3E98531CD1A95400DCB56B /* NetworkTools.swift in Sources */,
 				4C3E98511CD1A11800DCB56B /* HomeLaout.swift in Sources */,
+				4C764B381CD1FAD1001A78B9 /* PhotosBrowserCollectionLayout.swift in Sources */,
+				4C764B361CD1FA63001A78B9 /* PhotoBrowserCell.swift in Sources */,
+				4C764B2E1CD1BDDB001A78B9 /* ShopItem.swift in Sources */,
 				4C809CB81CD0F72C00163558 /* AppDelegate.swift in Sources */,
+				4C764B301CD1C005001A78B9 /* HomeCell.swift in Sources */,
 				4C3E984F1CD19B7D00DCB56B /* HomeViewController.swift in Sources */,
+				4C764B341CD1F1F7001A78B9 /* UIButton-Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

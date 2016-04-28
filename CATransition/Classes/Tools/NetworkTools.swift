@@ -22,6 +22,7 @@ class NetworkTools: AFHTTPSessionManager {
     }()
     
 }
+
 // MARK:- 封装网络请求
 extension NetworkTools{
     
@@ -42,3 +43,31 @@ extension NetworkTools{
     }
 
 }
+// MARK:- 请求首页数据
+extension NetworkTools{
+    func loadHomeData(offset : Int ,finished : (result : [[String : AnyObject]]?,error : NSError?) -> ()){
+        let urlString = "http://mobapi.meilishuo.com/2.0/twitter/popular.json"
+        let parameters = ["offset" : "\(offset)", "limit" : "30","access_token" : "b92e0c6fd3ca919d3e7547d446d9a8c2"]
+        request(.GIT, urlString: urlString, parameters: parameters) { (result, error) -> () in
+            // 1.判断是否有错误
+            if error != nil {
+                finished(result: nil, error: error)
+            }
+            // 获得结果
+            guard let result = result as? [String : AnyObject] else{
+                finished(result: nil, error: NSError(domain: "data error", code: -1011, userInfo: nil))
+                return
+            }
+            // 回调结果
+                finished(result: result["data"] as? [[String : AnyObject]], error: nil)
+        }
+    }
+    
+}
+
+
+
+
+
+
+
