@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C3E984F1CD19B7D00DCB56B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3E984E1CD19B7D00DCB56B /* HomeViewController.swift */; };
+		4C3E98511CD1A11800DCB56B /* HomeLaout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3E98501CD1A11800DCB56B /* HomeLaout.swift */; };
+		4C3E98531CD1A95400DCB56B /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3E98521CD1A95400DCB56B /* NetworkTools.swift */; };
 		4C809CB81CD0F72C00163558 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C809CB71CD0F72C00163558 /* AppDelegate.swift */; };
-		4C809CBA1CD0F72C00163558 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C809CB91CD0F72C00163558 /* ViewController.swift */; };
 		4C809CBD1CD0F72C00163558 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C809CBB1CD0F72C00163558 /* Main.storyboard */; };
 		4C809CBF1CD0F72C00163558 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C809CBE1CD0F72C00163558 /* Assets.xcassets */; };
 		4C809CC21CD0F72C00163558 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C809CC01CD0F72C00163558 /* LaunchScreen.storyboard */; };
+		F4984AB7CC6FF2A7CC62E151 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22611049872FCAC7018F8E25 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22611049872FCAC7018F8E25 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EA520B5406BE5BE4676394F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		4C3E984E1CD19B7D00DCB56B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4C3E98501CD1A11800DCB56B /* HomeLaout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeLaout.swift; sourceTree = "<group>"; };
+		4C3E98521CD1A95400DCB56B /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
 		4C809CB41CD0F72C00163558 /* CATransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CATransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C809CB71CD0F72C00163558 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C809CB91CD0F72C00163558 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4C809CBC1CD0F72C00163558 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C809CBE1CD0F72C00163558 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C809CC11CD0F72C00163558 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C809CC31CD0F72C00163558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBD63E162C45D77938C99DE1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,62 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4984AB7CC6FF2A7CC62E151 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		479E51D2E0D2D9647DBA68C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22611049872FCAC7018F8E25 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C3E984A1CD19B4E00DCB56B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4C3E984B1CD19B4E00DCB56B /* Home */,
+				4C3E984C1CD19B4E00DCB56B /* PhotoBrowser */,
+				4C3E984D1CD19B4E00DCB56B /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4C3E984B1CD19B4E00DCB56B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4C3E984E1CD19B7D00DCB56B /* HomeViewController.swift */,
+				4C3E98501CD1A11800DCB56B /* HomeLaout.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4C3E984C1CD19B4E00DCB56B /* PhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PhotoBrowser;
+			sourceTree = "<group>";
+		};
+		4C3E984D1CD19B4E00DCB56B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				4C3E98521CD1A95400DCB56B /* NetworkTools.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		4C809CAB1CD0F72C00163558 = {
 			isa = PBXGroup;
 			children = (
 				4C809CB61CD0F72C00163558 /* CATransition */,
 				4C809CB51CD0F72C00163558 /* Products */,
+				6BF46DB694E5F85AFE7F2A92 /* Pods */,
+				479E51D2E0D2D9647DBA68C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +107,23 @@
 		4C809CB61CD0F72C00163558 /* CATransition */ = {
 			isa = PBXGroup;
 			children = (
+				4C3E984A1CD19B4E00DCB56B /* Classes */,
 				4C809CB71CD0F72C00163558 /* AppDelegate.swift */,
-				4C809CB91CD0F72C00163558 /* ViewController.swift */,
 				4C809CBB1CD0F72C00163558 /* Main.storyboard */,
 				4C809CBE1CD0F72C00163558 /* Assets.xcassets */,
 				4C809CC01CD0F72C00163558 /* LaunchScreen.storyboard */,
 				4C809CC31CD0F72C00163558 /* Info.plist */,
 			);
 			path = CATransition;
+			sourceTree = "<group>";
+		};
+		6BF46DB694E5F85AFE7F2A92 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CBD63E162C45D77938C99DE1 /* Pods.debug.xcconfig */,
+				3EA520B5406BE5BE4676394F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +133,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C809CC61CD0F72C00163558 /* Build configuration list for PBXNativeTarget "CATransition" */;
 			buildPhases = (
+				BFBB183A15F00C22FE325836 /* Check Pods Manifest.lock */,
 				4C809CB01CD0F72C00163558 /* Sources */,
 				4C809CB11CD0F72C00163558 /* Frameworks */,
 				4C809CB21CD0F72C00163558 /* Resources */,
+				24C5A338291F205EB517CC1C /* Embed Pods Frameworks */,
+				FA49C188C06067216D016B0B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,13 +195,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		24C5A338291F205EB517CC1C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFBB183A15F00C22FE325836 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FA49C188C06067216D016B0B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4C809CB01CD0F72C00163558 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C809CBA1CD0F72C00163558 /* ViewController.swift in Sources */,
+				4C3E98531CD1A95400DCB56B /* NetworkTools.swift in Sources */,
+				4C3E98511CD1A11800DCB56B /* HomeLaout.swift in Sources */,
 				4C809CB81CD0F72C00163558 /* AppDelegate.swift in Sources */,
+				4C3E984F1CD19B7D00DCB56B /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,8 +362,10 @@
 		};
 		4C809CC71CD0F72C00163558 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBD63E162C45D77938C99DE1 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = CATransition/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kpocs.CATransition;
@@ -258,8 +375,10 @@
 		};
 		4C809CC81CD0F72C00163558 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EA520B5406BE5BE4676394F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = CATransition/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kpocs.CATransition;
@@ -286,6 +405,7 @@
 				4C809CC81CD0F72C00163558 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
