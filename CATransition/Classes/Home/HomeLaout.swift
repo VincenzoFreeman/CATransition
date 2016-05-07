@@ -13,7 +13,7 @@ class HomeLaout: UICollectionViewFlowLayout {
         super.prepareLayout()
        /// 定义常量
         let cols : CGFloat = 3
-        let margin : CGFloat = 10
+        let margin : CGFloat = 9
         // 设置item宽高
         let itemWH = (UIScreen.mainScreen().bounds.width - (cols + 1) * margin) / cols
         itemSize = CGSize(width: itemWH, height: itemWH)
